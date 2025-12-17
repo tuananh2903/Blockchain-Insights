@@ -26,14 +26,21 @@ def job():
         return
 
     # 2. AI LÀM VIỆC (Viết Full Báo cáo + Kịch bản)
-    print("🧠 Bước 2: Gemini đang xử lý nội dung...")
+
+    # ... (Code trên giữ nguyên)
     try:
-        # AI trả về nội dung gồm cả 3 phần
         full_content = analyzer.analyze_market_data(news_list, market_data)
         
+        # --- SỬA ĐOẠN NÀY ---
         if "Lỗi" in full_content:
-            print("   ⚠️ AI báo lỗi, dừng quy trình.")
+            # In nguyên văn cái lỗi ra để biết đường sửa
+            print(f"   ⚠️ CHI TIẾT LỖI TỪ GEMINI: {full_content}") 
             return
+        # --------------------
+            
+        print("   ✅ Đã tạo xong nội dung.")
+    except Exception as e:
+    # ...
             
         print("   ✅ Đã tạo xong nội dung.")
     except Exception as e:
@@ -86,4 +93,5 @@ def job():
     print("🏁 --- DONE ---")
 
 if __name__ == "__main__":
+
     job()
