@@ -3,7 +3,7 @@ name: Daily Crypto Bot
 on:
   schedule:
     # Chạy lúc 00:00 UTC (tức 7:00 sáng VN)
-    - cron: '48 3 * * *'
+    - cron: '19 0 * * *'
   # Cho phép bấm nút chạy thủ công để test
   workflow_dispatch:
 
