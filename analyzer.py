@@ -74,7 +74,7 @@ def analyze_market_data(news_list, onchain_data):
     === YÊU CẦU BÁO CÁO (Bắt buộc theo 2 phần sau) ===
 
     PHẦN 1: 📰 ĐIỂM TIN & CÔNG NGHỆ
-    - Bình luận chi tiết (insights) về tất cả các tin tức thu thập được.
+    - Bình luận chi tiết & sâu sắc (insights) về tất cả các tin tức thu thập được.
     - ĐẶC BIỆT: Nếu có tin về **Công nghệ mới** (Update, Fork, Protocol, AI...), hãy giải thích cơ chế hoạt động của nó một cách chi tiết nhưng dễ hiểu cho người mới (giải thích "nó là gì" và "tại sao nó quan trọng").
     - Nhận xét tác động của tin tức đến tâm lý chung.
 
@@ -111,4 +111,5 @@ def analyze_market_data(news_list, onchain_data):
     except Exception as e:
 
         return f"Lỗi phân tích AI: {e}"
+
 
