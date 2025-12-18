@@ -74,7 +74,7 @@ def analyze_market_data(news_list, onchain_data):
     === YÊU CẦU BÁO CÁO (Bắt buộc theo 2 phần sau) ===
 
     PHẦN 1: 📰 ĐIỂM TIN & CÔNG NGHỆ
-    - Chọn lọc tối thiểu 2-3, không giới hạn tối đa tin tức quan trọng nhất để bình luận.
+    - Chọn lọc tối thiểu 3 tin tức, không giới hạn tối đa tin tức quan trọng nhất để bình luận.
     - ĐẶC BIỆT: Nếu có tin về **Công nghệ mới** (Update, Fork, Protocol, AI...), hãy giải thích cơ chế hoạt động của nó một cách chi tiết nhưng dễ hiểu cho người mới (giải thích "nó là gì" và "tại sao nó quan trọng").
     - Nhận xét tác động của tin tức đến tâm lý chung.
 
@@ -109,4 +109,5 @@ def analyze_market_data(news_list, onchain_data):
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
+
         return f"Lỗi phân tích AI: {e}"
